@@ -5,13 +5,7 @@ end
 
 def sort_array_plus_one(a)
   # Q2 CODE HERE
-  a = a.sort
-  l = 0
-  while l < a.length
-  	a[l] = a[l] + 1
-  	l = l + 1
-  end
-  return a
+  return (a.sort).map {|a| a + 1}
 end
 
 def combine_name(first_name, last_name)
